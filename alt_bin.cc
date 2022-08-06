@@ -3,9 +3,8 @@ using namespace std;
 
 bool alt_bin(int *a, int n, int x){
     int k=0;
-    for(int i=n/2; i>=1; i/=2){
+    for(int i=n/2; i>=1; i/=2)
         while((k+i)<n && a[k+i]<=x) k+=i;
-    }
     if(a[k]==x)
         return 1;
     return 0;
