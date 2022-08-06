@@ -6,7 +6,7 @@ int countSetBits(int n)
 	int no=0;
 	// Your logic here
 	for(int i=1; i<=n; i++)
-		no+=set_bits(i);
+		//no+=set_bits(i);
 	return no;
 }
 
